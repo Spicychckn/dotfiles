@@ -1,7 +1,7 @@
 time_out () { perl -e 'alarm shift; exec @ARGV' "$@"; }
 
 # Run tmux if exists
-if [ ! _no_tmux]; then
+if [ ! $_no_tmux]; then
   if command -v tmux>/dev/null; then
     [ -z $TMUX ] && exec `tmux attach-session -t Dev || tmux new-session -s Dev`
   else 
