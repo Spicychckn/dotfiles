@@ -7,3 +7,10 @@
 [user]
 	email = Spicychckn@gmail.com
 	name = Chad Effler
+
+[alias]
+  co   = checkout
+  logg = log --all --graph --decorate
+  logo = log --all --graph --decorate --oneline
+  dif  = difftool
+  merg = mergetool
