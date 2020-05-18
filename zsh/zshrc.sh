@@ -15,8 +15,8 @@
 	alias ....="cd ../../.."
 	alias c="clear"
   alias la="ls -lah"
-  alias du1="du -h -d1"
-  alias du2="du -h -d2"
+  alias du1="du -h -d1 | sort -k2"
+  alias du2="du -h -d2 | sort -k2"
 	mkdir -p /tmp/log
 	
 	# This is currently causing problems (fails when you run it anywhere that isn't a git project's root directory)
