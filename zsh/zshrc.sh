@@ -3,6 +3,9 @@
 	SAVEHIST=1000 
 	setopt inc_append_history # To save every command before it is executed 
 	setopt no_share_history # setopt inc_append_history
+  
+  autoload -U compinit
+  compinit
 
 # Aliases
 	alias v="vim -p"
