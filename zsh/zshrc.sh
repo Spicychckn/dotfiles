@@ -4,8 +4,6 @@
 	setopt inc_append_history # To save every command before it is executed 
 	setopt no_share_history # setopt inc_append_history
   
-  autoload -U compinit
-  compinit
 
 # Aliases
 	alias v="vim -p"
@@ -56,7 +54,7 @@ source ~/dotfiles/zsh/plugins/fixls.zsh
 
 source ~/dotfiles/zsh/plugins/oh-my-zsh/lib/history.zsh
 source ~/dotfiles/zsh/plugins/oh-my-zsh/lib/key-bindings.zsh
-source ~/dotfiles/zsh/plugins/oh-my-zsh/lib/completion.zsh
+#source ~/dotfiles/zsh/plugins/oh-my-zsh/lib/completion.zsh
 source ~/dotfiles/zsh/plugins/vi-mode.plugin.zsh
 source ~/dotfiles/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/dotfiles/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
@@ -78,3 +76,13 @@ if [[ "${terminfo[kcud1]}" != "" ]]; then
 fi
 
 source ~/dotfiles/zsh/prompt.sh
+
+# The following lines were added by compinstall
+
+zstyle ':completion:*' completer _expand _complete _ignored _approximate
+zstyle ':completion:*' matcher-list 'm:{[:lower:]}={[:upper:]}' 'r:|[._-]=** r:|=**'
+zstyle :compinstall filename '/home/spicychckn/.zshrc'
+
+autoload -Uz compinit
+compinit
+# End of lines added by compinstall

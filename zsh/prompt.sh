@@ -59,7 +59,7 @@ set_prompt() {
 	# Status Code
 	PS1+="%(?.., %{%F{red}%}%?%{%f%})"
 
-	PS1+="%{%F{white} ]%b%{%f%}: "
+	PS1+="%{%F{white}%} ]%b%{%f%}: "
 }
 
 precmd_functions+=set_prompt
