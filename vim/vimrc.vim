@@ -1,9 +1,9 @@
 " Plugins
 call plug#begin('~/dotfiles/vim/vimfiles/plugged')
 
-Plug 'https://github.com/tmhedberg/SimpylFold.git'
-Plug 'https://github.com/Konfekt/FastFold.git'
-Plug 'https://github.com/godlygeek/tabular.git'
+"Plug 'https://github.com/tmhedberg/SimpylFold.git'
+"Plug 'https://github.com/Konfekt/FastFold.git'
+"Plug 'https://github.com/godlygeek/tabular.git'
 "Plug 'https://github.com/tpope/vim-fugitive.git'
 "Plug 'https://github.com/vimwiki/vimwiki'
 "Plug 'https://github.com/ap/vim-css-color'
