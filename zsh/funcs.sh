@@ -17,3 +17,10 @@ extract() {
     echo "'$1' is not a valid file"
   fi
 }
+
+
+wttr() {
+  local request="wttr.in/${37921}?F"
+  [ "$1" = "n" ] || [ "$(tput cols)" -lt 125 ] && request+='?n'
+  curl -H "Accept-Language: ${LANG%_*}" --compressed "$request"
+}
