@@ -32,6 +32,15 @@
 	zle -N goto_home
 	bindkey "^h" goto_home
 
+# Work
+  function goto_work() {
+    BUFFER="cd ~/projects/xps; clear"$BUFFER
+    zle end-of-line
+    zle accept-line
+  }
+  zle -N goto_work
+  bindkey "^p" goto_work
+
 # Edit and rerun
 	function edit_and_run() {
 		BUFFER="fc"
